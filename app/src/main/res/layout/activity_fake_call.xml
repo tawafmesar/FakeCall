@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".FakeCallActivity">
+
+
+    <!-- Name TextView -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+
+    <!-- Number TextView -->
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/textViewName"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:text="Phone Number:"
+        android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="350dp"
+    android:gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+
+    >
+    <!-- Call Answer Button -->
+    <ImageButton
+        android:id="@+id/btnAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="130dp"
+
+
+        android:src="@drawable/ic_baseline_call_24"
+        android:contentDescription="Answer Call" />
+
+    <!-- Call End Button -->
+    <ImageButton
+        android:id="@+id/btnEnd"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_call_end_244"
+        android:contentDescription="End Call" />
+
+
+</LinearLayout>
+</LinearLayout>

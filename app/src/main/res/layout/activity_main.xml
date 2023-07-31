@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="100dp"
+    android:background="@drawable/backgroundtow"
+    tools:context=".MainActivity">
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName" />
+
+    <!-- Phone Number Input Field -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Enter your phone number"
+        android:inputType="phone" />
+
+    <!-- Call Button -->
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhoneNumber"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Call" />
+</RelativeLayout>
